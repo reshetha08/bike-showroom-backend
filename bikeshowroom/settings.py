@@ -25,8 +25,11 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ['web-production-11289.up.railway.app', 'localhost', '127.0.0.1']
-CSRF_TRUSTED_ORIGINS = ['https://web-production-11289.up.railway.app']
+ALLOWED_HOSTS = ['bike-showroom-backend-erku.onrender.com', 'localhost', '127.0.0.1']
+CSRF_TRUSTED_ORIGINS = [
+    'https://bike-showroom-backend-erku.onrender.com',
+    'https://balaji-motors-puce.vercel.app',
+]
 
 
 # Application definition
@@ -154,5 +157,5 @@ STORAGES = {
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
-    "https://balajimotors.up.railway.app",
+    "https://balaji-motors-puce.vercel.app",
 ]
